@@ -1,0 +1,22 @@
+@import 'colours';
+
+nav.nav_bar {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav_link {
+  color: $primary;
+  font-size: 1.5em;
+  padding: 0 10px;
+  &:hover {
+    @media (hover) {
+      color: $hover !important;
+      // background-color: $secondary !important;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 1.2em;
+    padding: 0 5px;
+  }
+}

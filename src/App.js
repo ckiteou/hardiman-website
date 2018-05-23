@@ -1,10 +1,12 @@
-import React from 'react';
-import './styles/App.scss';
+import React from 'react'
+import Navbar from './components/Navbar'
+import './styles/hardiman.scss'
+
 
 const App = ({children}) => (
-  <div className="App">
-    <header className="App-header">
-      <h1 className="App-title">The Hardiman Website</h1>
+  <div className="hardiman_website">
+    <header className="header">
+      <Navbar/>
     </header>
     {children}
   </div>
