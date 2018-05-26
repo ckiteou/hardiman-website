@@ -16,13 +16,13 @@ div.hardiman_website {
 }
 
 header.header {
-  height: 50px;
-  padding: 20px 0;
+  box-sizing: border-box;
+  height: 80px;
   position: fixed;
   width: 100%;
-  text-align: center;
-  top: 0;
-  line-height: 50px;
+  line-height: 80px;
+  background-color: white;
+  z-index: 1;
 }
 
 a {

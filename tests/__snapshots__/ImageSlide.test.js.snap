@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageSlide renders 1`] = `
+<div
+  className="image_slide"
+  style={
+    Object {
+      "backgroundImage": "url(bratislava.jpg,checklist.jpg,wife.jpg,letisko.jpg)",
+    }
+  }
+/>
+`;

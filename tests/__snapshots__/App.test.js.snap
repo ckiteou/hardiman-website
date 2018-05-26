@@ -7,44 +7,51 @@ exports[`App renders 1`] = `
   <header
     className="header"
   >
-    <nav
-      className="nav_bar"
-    >
-      <a
-        className="nav_link"
-        onClick={[Function]}
-        style={Object {}}
+    <nav>
+      <div
+        className="nav_bar"
       >
-        Home
-      </a>
-      <a
-        className="nav_link"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        About
-      </a>
-      <a
-        className="nav_link"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        Services
-      </a>
-      <a
-        className="nav_link"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        Portfolio
-      </a>
-      <a
-        className="nav_link"
-        onClick={[Function]}
-        style={Object {}}
-      >
-        Contact
-      </a>
+        <a
+          className="nav_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Home
+        </a>
+        <a
+          className="nav_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          About
+        </a>
+        <a
+          className="nav_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Services
+        </a>
+        <a
+          className="nav_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Portfolio
+        </a>
+        <a
+          className="nav_link"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          Contact
+        </a>
+        <h3
+          className="mobile"
+        >
+          07079 000 612
+        </h3>
+      </div>
     </nav>
   </header>
 </div>
