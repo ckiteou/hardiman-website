@@ -3,14 +3,22 @@ import { Link } from 'react-router'
 import navlinks from '../data/navbar.json'
 import '../styles/nav.scss'
 
+export const ContactDetails = () => (
+  <div className="contact_container">
+    <p className="email">Email: jon_hardiman@xxxxx.com</p> {/*needs updating*/}
+    <p className="number">Tel: 01235 666 xxx</p> {/*needs updating*/}
+  </div>
+)
+
 const Navbar = () => (
   <nav>
     <div className="nav_bar">
+      <h1 className="logo">LOGO</h1>
       {
         navlinks.map(i =>
           <Link key={i} className="nav_link" to="/">{i}</Link>)
       }
-      <h3 className="mobile">07079 000 612</h3>
+      <ContactDetails/>
     </div>
   </nav>
 )

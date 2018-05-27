@@ -11,6 +11,11 @@ exports[`App renders 1`] = `
       <div
         className="nav_bar"
       >
+        <h1
+          className="logo"
+        >
+          LOGO
+        </h1>
         <a
           className="nav_link"
           onClick={[Function]}
@@ -46,11 +51,22 @@ exports[`App renders 1`] = `
         >
           Contact
         </a>
-        <h3
-          className="mobile"
+        <div
+          className="contact_container"
         >
-          07079 000 612
-        </h3>
+          <p
+            className="email"
+          >
+            Email: jon_hardiman@xxxxx.com
+          </p>
+           
+          <p
+            className="number"
+          >
+            Tel: 01235 666 xxx
+          </p>
+           
+        </div>
       </div>
     </nav>
   </header>
