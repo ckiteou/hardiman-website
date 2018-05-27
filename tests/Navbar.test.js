@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer'
 
-import Navbar from '../src/components/Navbar';
+import Navbar from '../src/components/home/Navbar';
 import { ContactDetails } from '../src/components/home/Navbar';
 
 describe('Navbar', () => {
