@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import { imgUrls }  from  '../images/home/index.js'
-import '../styles/home.scss';
+import { imgUrls }  from  '../../images/home/index.js'
+import '../../styles/home.scss';
 
 
 export const ImageSlide = ({url}) => {

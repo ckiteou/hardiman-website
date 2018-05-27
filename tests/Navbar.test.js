@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer'
 
 import Navbar from '../src/components/Navbar';
-import { ContactDetails } from '../src/components/Navbar';
+import { ContactDetails } from '../src/components/home/Navbar';
 
 describe('Navbar', () => {
   it('renders', () => {

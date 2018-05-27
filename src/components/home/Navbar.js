@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
-import navlinks from '../data/navbar.json'
-import '../styles/nav.scss'
+import navlinks from '../../data/navbar.json'
+import '../../styles/nav.scss'
 
 export const ContactDetails = () => (
   <div className="contact_container">
@@ -13,7 +13,7 @@ export const ContactDetails = () => (
 const Navbar = () => (
   <nav>
     <div className="nav_bar">
-      <h1 className="logo">LOGO</h1>
+      <h1 className="logo">LOGO</h1>{/*needs updating*/}
       {
         navlinks.map(i =>
           <Link key={i} className="nav_link" to="/">{i}</Link>)
