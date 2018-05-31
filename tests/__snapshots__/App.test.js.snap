@@ -51,24 +51,11 @@ exports[`App renders 1`] = `
         >
           Contact
         </a>
-        <div
-          className="contact_container"
-        >
-          <p
-            className="email"
-          >
-            Email: jon_hardiman@xxxxx.com
-          </p>
-           
-          <p
-            className="number"
-          >
-            Tel: 01235 666 xxx
-          </p>
-           
-        </div>
       </div>
     </nav>
   </header>
+  <div
+    className="main"
+  />
 </div>
 `;

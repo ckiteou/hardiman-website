@@ -18,7 +18,6 @@ const Navbar = () => (
         navlinks.map(i =>
           <Link key={i} className="nav_link" to="/">{i}</Link>)
       }
-      <ContactDetails/>
     </div>
   </nav>
 )
