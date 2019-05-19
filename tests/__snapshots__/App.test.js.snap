@@ -4,9 +4,7 @@ exports[`App renders 1`] = `
 <div
   className="hardiman_website"
 >
-  <header
-    className="header"
-  >
+  <header>
     <nav>
       <div
         className="nav_bar"
@@ -18,36 +16,25 @@ exports[`App renders 1`] = `
         </h1>
         <a
           className="nav_link"
-          onClick={[Function]}
-          style={Object {}}
+          href="#home"
         >
           Home
         </a>
         <a
           className="nav_link"
-          onClick={[Function]}
-          style={Object {}}
+          href="#about"
         >
           About
         </a>
         <a
           className="nav_link"
-          onClick={[Function]}
-          style={Object {}}
+          href="#services"
         >
           Services
         </a>
         <a
           className="nav_link"
-          onClick={[Function]}
-          style={Object {}}
-        >
-          Portfolio
-        </a>
-        <a
-          className="nav_link"
-          onClick={[Function]}
-          style={Object {}}
+          href="#contact"
         >
           Contact
         </a>
@@ -55,7 +42,126 @@ exports[`App renders 1`] = `
     </nav>
   </header>
   <div
-    className="main"
-  />
+    className="wrapper"
+  >
+    <main>
+      <div
+        className="home"
+      >
+        <div
+          className="carousel"
+          id="home"
+        >
+          <div
+            className="image_slide"
+            style={
+              Object {
+                "backgroundImage": "url(tools.jpg)",
+              }
+            }
+          />
+          <h1
+            className="place_holder"
+          >
+            Welcome
+          </h1>
+          <div
+            className="dot_container"
+          >
+            <div
+              className="dot active"
+              id={0}
+              onClick={[Function]}
+            />
+            <div
+              className="dot"
+              id={1}
+              onClick={[Function]}
+            />
+            <div
+              className="dot"
+              id={2}
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+        <div
+          className="section_container"
+        >
+          <div
+            className="title-divider"
+          >
+            <hr />
+            <h2>
+              About
+            </h2>
+            <hr />
+          </div>
+          <div
+            className="text"
+            style={
+              Object {
+                "height": "600px",
+                "padding": "20px",
+              }
+            }
+          >
+            About
+          </div>
+        </div>
+        <div
+          className="section_container"
+        >
+          <div
+            className="title-divider"
+          >
+            <hr />
+            <h2>
+              Services
+            </h2>
+            <hr />
+          </div>
+          <div
+            className="text"
+            style={
+              Object {
+                "height": "600px",
+                "padding": "20px",
+              }
+            }
+          >
+            Services
+          </div>
+        </div>
+        <div
+          className="section_container"
+        >
+          <div
+            className="title-divider"
+          >
+            <hr />
+            <h2>
+              Contact
+            </h2>
+            <hr />
+          </div>
+          <div
+            className="text"
+            style={
+              Object {
+                "height": "600px",
+                "padding": "20px",
+              }
+            }
+          >
+            Contact
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <footer />
+  </footer>
 </div>
 `;

@@ -1,24 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContactDetails renders 1`] = `
-<div
-  className="contact_container"
->
-  <p
-    className="email"
-  >
-    Email: jon_hardiman@xxxxx.com
-  </p>
-   
-  <p
-    className="number"
-  >
-    Tel: 01235 666 xxx
-  </p>
-   
-</div>
-`;
-
 exports[`Navbar renders 1`] = `
 <nav>
   <div
@@ -31,36 +12,25 @@ exports[`Navbar renders 1`] = `
     </h1>
     <a
       className="nav_link"
-      onClick={[Function]}
-      style={Object {}}
+      href="#home"
     >
       Home
     </a>
     <a
       className="nav_link"
-      onClick={[Function]}
-      style={Object {}}
+      href="#about"
     >
       About
     </a>
     <a
       className="nav_link"
-      onClick={[Function]}
-      style={Object {}}
+      href="#services"
     >
       Services
     </a>
     <a
       className="nav_link"
-      onClick={[Function]}
-      style={Object {}}
-    >
-      Portfolio
-    </a>
-    <a
-      className="nav_link"
-      onClick={[Function]}
-      style={Object {}}
+      href="#contact"
     >
       Contact
     </a>

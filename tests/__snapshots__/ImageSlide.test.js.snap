@@ -5,7 +5,7 @@ exports[`ImageSlide renders 1`] = `
   className="image_slide"
   style={
     Object {
-      "backgroundImage": "url(bratislava.jpg,checklist.jpg,wife.jpg,letisko.jpg)",
+      "backgroundImage": "url(tools.jpg,trough.jpg,watering.jpg)",
     }
   }
 />
