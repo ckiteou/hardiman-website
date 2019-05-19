@@ -1,112 +1,48 @@
 @import 'colours';
 
-main.home {
-  position: relative;
-  top: 100px;
-  min-width: 600px;
-  width: 100%;
+.home {
+  height: 100%;
 
-  .carousel,  {
-    text-align: center;//place holder (remove)
-    height: 500px;
-    margin: 0;
-    width: 100%;
-    min-height: 500px;
+  .section_container {
+    padding: 40px;
+    .title-divider {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      h2 {
+        margin: 0;
+        width: 25%;
+        font-weight: normal;
+        color: $primary;
+      }
+      hr {
+        background-color: #e9e9e9;
+        border: #e9e9e9;
+        height: 1px;
+        margin: 0;
+        width: 37.5%;
+      }    }
+    .text {
+      width: 70%;
+    }
+    img {
+      width: 30%;
+    }
   }
 
-  .image_slide {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transition: background-image .7s linear;
-    background-size: cover;
-    background-position: center;
+  .profile_image {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 60%;
+    left: 10%;
+    height: auto;
+    vertical-align: middle;
+    border: solid 2px $primary;
     opacity: 0.9;
     box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 7px 10px 10px rgba(0,0,0,0.22);
-  }
-
-  .dot_container {
-    text-align: center;
-  }
-
-  .dot {
-    z-index: 2;
-    cursor: pointer;
-    height: 9px;
-    width: 9px;
-    margin: 5px 2px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    position: relative;
-    top: -110px;
-  }
-
-  .active, .dot:hover {
-    background-color: $primary;
-  }
-  //place holder (remove)
-  .place_holder {
-    width: 100%;
-    z-index: 2;
-    position: relative;
-    top: -300px;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .container {
-    width: 100%;
-    height: 300px;
-    font-size: 1.4em;
-    font-family: "Georgia", Times, serif;
-    font-style: italic;
-
-    .quote_container {
-      position: relative;
-      display: inline-block;
-      height: 100%;
-      width: 60%;
-      float: left;
-      text-align: center;
-    }
-
-    .quote {
-      position: relative;
-      box-sizing: border-box;
-      height: 100%;
-      width: 100%;
-      padding: 0 20px 0 100px;
-      display:flex;
-      align-items: center;
-      cursor: default;
-    }
-
-    .image_container {
-      position: relative;
-      display: inline-block;
-      vertical-align: middle;
-      height: 100%;
-      width: 40%;
-      float: right;
-      line-height: 300px;
-    }
-
-    .profile_image {
-      position: relative;
-      display: inline-block;
-      box-sizing: border-box;
-      width: 70%;
-      left: 10%;
-      height: auto;
-      vertical-align: middle;
-      border: solid 2px $primary;
-      opacity: 0.9;
-      box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 7px 10px 10px rgba(0,0,0,0.22);
-    }
   }
 }

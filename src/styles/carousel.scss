@@ -1,0 +1,50 @@
+@import 'colours';
+
+.carousel {
+  text-align: center;//place holder (remove)
+  height: 500px;
+  width: 100%;
+
+  .image_slide {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background-image .7s linear;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 7px 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .dot {
+    z-index: 2;
+    cursor: pointer;
+    height: 9px;
+    width: 9px;
+    margin: 5px 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: -110px;
+  }
+
+  .dot_container {
+    text-align: center;
+  }
+
+  .active, .dot:hover {
+    background-color: $primary;
+  }
+
+  //place holder (remove)
+  .place_holder {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: -300px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,16 +1,27 @@
 import React from 'react'
-import Navbar from './components/home/Navbar'
+import Navbar from './components/Navbar'
+import Home from './components/home/Home'
 import './styles/hardiman.scss'
 
+const Footer = () => (
+  <footer>
+    { /* placeholder for footer shit */ }
+  </footer>
+)
 
-const App = ({children}) => (
+const App = () => (
   <div className="hardiman_website">
-    <header className="header">
+    <header>
       <Navbar/>
     </header>
-    <div className="main">
-      {children}
+    <div className="wrapper">
+      <main>
+        <Home/>
+      </main>
     </div>
+    <footer>
+      <Footer/>
+    </footer>
   </div>
 )
 

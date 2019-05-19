@@ -1,11 +1,9 @@
-import bratislava from './bratislava.jpg'
-import checklist from './checklist.jpg'
-import letisko from './letisko.jpg'
-import wife from './wife.jpg'
+import tools from './tools.jpg'
+import trough from './trough.jpg'
+import watering from './watering.jpg'
 
 export const imgUrls = [
-  bratislava,
-  checklist,
-  wife,
-  letisko
+  tools,
+  trough,
+  watering
 ]

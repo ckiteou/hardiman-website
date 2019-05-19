@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { imgUrls }  from  '../../images/home/index.js'
-import '../../styles/home.scss';
+import '../../styles/carousel.scss';
 
 
 export const ImageSlide = ({url}) => {
@@ -48,9 +48,11 @@ class Carousel extends Component {
 
   render () {
     return (
-      <div className="carousel">
+      <div className="carousel" id={'home'}>
         <ImageSlide url={imgUrls[this.state.currentImageIndex]}/>
-        <h1 className="place_holder">PLACEHOLDER IMAGE</h1>
+        <h1 className="place_holder">
+          Welcome
+        </h1>
         <div className="dot_container">
           {
             imgUrls.map((v, i) => (
