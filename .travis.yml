@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-  - node_modules #Cache node_modules for faster builds
+  - node_modules
 script:
-  - npm test #Runs Tests
-  - npm run build #Creats a production build
+- npm test
+- npm run build
 deploy:
   provider: heroku
   app: staging-hardiman-web-app
   api_key:
-    secure: "ZhhFGwg9Ogqod4fxkrsthCj+NM5GIixenM4UiDiKV+Te1/GW4vk/DJFZszXzpnXw3eZD6xWJQaaETV7JEA5UNOGEgRmjaPc1ohMLHhxREECMU1z8vCGWkqXOobA+9Jq67LY/EjsWkCk032dprxhsczOYqRpVXeoUH4eLWxAR0ottb/j0e2i6RXmCdZKL1SriacOP6cwZaNfKpNBPWesg3Nlbf1h6ZWlCA6co+OtltPio+WGf77Oap6ZTGXJF/56O/qbhSFUz7iw9KvTITEzJ3xMioYY9z+D14Rz0vxeLE8u6oBrrBf77viEqJWRdDhABdEwjXerlk5qn8s1q2OE6G2fkkNjS9qICw8BS+Q1hyrJyqGeadUHq8U/E9nA7WDnrMEDe5Q1WRpHKbzCJjUIRwSBaPr06U2bE4eO1QgGr9dOhGIOmBe0YWdmM8SpOivjUp0HtX2xdySbkcKI+R1B2eWZ5Tbb1/45h86qoN3MLvC0VjMpQ+Tt6HRaxdGkozZiIQQjSzpg7FKQnnz3DvXqSby1leXrIpBX0TW2Wsrydi8/3AwYv8xj+vB4qaWH1dZPC9+TpDapdyVV2EplbfvhOy1S9YtvR34hoC6ySGOIaBGnYLA5SqioxB6Y73HvtchcTuzQOuT+7op1tIN3xeq9cJ3obfp0lJXilchcd3lI8O5A="
+    secure: QQVpXLzNWsTHRRBmoYcsW9KT69jIRcxtsYb9etsnFVId2bvjOhixB9vxkKLZdGh0cM60xpQ+qbMYdO+/DG/lPw9w1AosHa7U025CvOHe78ZPcgSx/8J7n0UXY/RNOa4ye/E46JBFkQWJCds32EdqhDk/gbDEtsi8nwZz2J6HOcsDnBQka/S6LLxyMqtDaD1Wo6zfTti44QwDU+reQuSuFmZIebQ7zWl36g6cdZYpwHdT9+QwBAwtKex2stxed1kbnFQvGS4d0OdO+34bkSJRYA987qrrxVuetCCD7UBdwa6qlRXMYfWvM22I+BCEG8cfbL/hCu1gboOqJOD6g5QVsw4GIiNABs3GQBFjEFLcoH0Ptykt2hTJtBLAWLdkipca+m09Qo1WhMbXx/eNhr/dIEtyrCklpdt0g8iPhtVzdMlTeSbs7cjGoQPDnYgjIsZYyT2bq+HAGq3gz25H+cpADWMaBvP3pYcif3LJQCriljwih5cXGXiikKxGP71RQw9FeSbDJrmTcwgn6jDglhAQlE9576tkwb3qpcGkhpWBuxxCUuxTKnM6AZh1+pfzG+XVKAhYo6EhQh2P/TY5MIKftjqGnOxcqYRXGsSRHQ7uNq7LTT53p59iemvy/P3pS25+rh3a7c7fR8Zyp6TyWYlspEx+pyOOE/MmYpeK4hcCayw=
