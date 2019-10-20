@@ -8,8 +8,14 @@ export const ImageSlide = ({url}) => {
     backgroundImage: `url(${url})`,
   };
   return (
-    <div className="image_slide" style={styles}></div>
+    <img src={url} style={{width: '100%', height: 'auto'}}/>
   );
+}
+
+export const Image = () => {
+  return (
+    <img src={imgUrls.watering}/>
+  )
 }
 
 class Carousel extends Component {

@@ -1,11 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ImageSlide renders 1`] = `
-<div
-  className="image_slide"
+<img
+  src={
+    Array [
+      "tools.jpg",
+      "trough.jpg",
+    ]
+  }
   style={
     Object {
-      "backgroundImage": "url(tools.jpg,trough.jpg,watering.jpg)",
+      "height": "auto",
+      "width": "100%",
     }
   }
 />

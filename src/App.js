@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Home from './components/home/Home'
+import Main from './components/home/Main'
 import './styles/hardiman.scss'
 
 const Footer = () => (
@@ -16,7 +16,7 @@ const App = () => (
     </header>
     <div className="wrapper">
       <main>
-        <Home/>
+        <Main />
       </main>
     </div>
     <footer>

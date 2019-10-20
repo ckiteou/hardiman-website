@@ -48,43 +48,16 @@ exports[`App renders 1`] = `
       <div
         className="home"
       >
-        <div
-          className="carousel"
-          id="home"
-        >
-          <div
-            className="image_slide"
-            style={
-              Object {
-                "backgroundImage": "url(tools.jpg)",
-              }
+        <img
+          alt="Watering Garden"
+          src="./images/watering.jpg"
+          style={
+            Object {
+              "height": "auto",
+              "width": "100%",
             }
-          />
-          <h1
-            className="place_holder"
-          >
-            Welcome
-          </h1>
-          <div
-            className="dot_container"
-          >
-            <div
-              className="dot active"
-              id={0}
-              onClick={[Function]}
-            />
-            <div
-              className="dot"
-              id={1}
-              onClick={[Function]}
-            />
-            <div
-              className="dot"
-              id={2}
-              onClick={[Function]}
-            />
-          </div>
-        </div>
+          }
+        />
         <div
           className="section_container"
         >
