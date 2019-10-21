@@ -5,18 +5,24 @@ import '../styles/nav.scss'
 const Navbar = () => (
   <nav>
     <div className="nav_bar">
-      <h1 className="logo">LOGO</h1>{/*needs updating*/}
-      {
-        navlinks.map(i =>
-          <a
-            key={i.name}
-            className="nav_link"
-            href={i.link}
-          >
-            {i.name}
-          </a>
-        )
-      }
+      <div className="logo">JMHGardens</div>{/*needs updating*/}
+      <div className="nav_links_wrapper">
+        {
+          navlinks.map(i =>
+            <a
+              key={i.name}
+              className="nav_link"
+              href={i.link}
+            >
+              {i.name}
+            </a>
+          )
+        }
+      </div>
+      <div className="contact_number">
+        <i className="fas fa-phone-volume"/>
+        &nbsp; 07932 771 158
+      </div>{/*needs updating*/}
     </div>
   </nav>
 )

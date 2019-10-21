@@ -5,35 +5,47 @@ exports[`Navbar renders 1`] = `
   <div
     className="nav_bar"
   >
-    <h1
+    <div
       className="logo"
     >
-      LOGO
-    </h1>
-    <a
-      className="nav_link"
-      href="#home"
+      JMHGardens
+    </div>
+    <div
+      className="nav_links_wrapper"
     >
-      Home
-    </a>
-    <a
-      className="nav_link"
-      href="#about"
+      <a
+        className="nav_link"
+        href="#home"
+      >
+        Home
+      </a>
+      <a
+        className="nav_link"
+        href="#about"
+      >
+        About
+      </a>
+      <a
+        className="nav_link"
+        href="#services"
+      >
+        Services
+      </a>
+      <a
+        className="nav_link"
+        href="#contact"
+      >
+        Contact
+      </a>
+    </div>
+    <div
+      className="contact_number"
     >
-      About
-    </a>
-    <a
-      className="nav_link"
-      href="#services"
-    >
-      Services
-    </a>
-    <a
-      className="nav_link"
-      href="#contact"
-    >
-      Contact
-    </a>
+      <i
+        className="fas fa-phone-volume"
+      />
+        07932 771 158
+    </div>
   </div>
 </nav>
 `;
