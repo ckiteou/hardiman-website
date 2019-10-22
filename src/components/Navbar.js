@@ -5,7 +5,7 @@ import '../styles/nav.scss'
 const Navbar = () => (
   <nav>
     <div className="nav_bar">
-      <div className="logo">JMHGardens</div>{/*needs updating*/}
+      <div className="logo">JMHGardens</div>
       <div className="nav_links_wrapper">
         {
           navlinks.map(i =>
