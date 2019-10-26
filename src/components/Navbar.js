@@ -22,7 +22,7 @@ const Navbar = () => (
       <div className="contact_number">
         <i className="fas fa-phone-volume"/>
         &nbsp; 07932 771 158
-      </div>{/*needs updating*/}
+      </div>
     </div>
   </nav>
 )
