@@ -43,12 +43,29 @@ exports[`App renders 1`] = `
           </a>
         </div>
         <div
-          className="contact_number"
+          className="contact_details"
         >
-          <i
-            className="fas fa-phone-volume"
-          />
-            07932 771 158
+          <div
+            className="contact_number"
+          >
+            <i
+              className="fas fa-phone-volume"
+            />
+              07932 771 158
+          </div>
+          <div
+            className="contact_email"
+          >
+            <i
+              className="fas fa-envelope"
+            />
+              
+            <a
+              href="mailto:jmhgardens@yahoo.co.uk"
+            >
+              jmhgardens@yahoo.co.uk
+            </a>
+          </div>
         </div>
       </div>
     </nav>

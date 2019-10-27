@@ -19,9 +19,15 @@ const Navbar = () => (
           )
         }
       </div>
-      <div className="contact_number">
-        <i className="fas fa-phone-volume"/>
-        &nbsp; 07932 771 158
+      <div className="contact_details">
+        <div className="contact_number">
+          <i className="fas fa-phone-volume"/>
+          &nbsp; 07932 771 158
+        </div>
+        <div className="contact_email">
+          <i className="fas fa-envelope"/>
+          &nbsp; <a href='mailto:jmhgardens@yahoo.co.uk'>jmhgardens@yahoo.co.uk</a>
+        </div>
       </div>
     </div>
   </nav>

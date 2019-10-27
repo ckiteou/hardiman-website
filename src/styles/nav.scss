@@ -8,30 +8,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  .logo,
-  .contact_number {
-    width: 25%;
-    color: $primary;
-  }
   .logo {
     font-family: "Great Vibes";
     padding-top: 2px;
     font-size: 1.6em;
     @media screen and (max-width: 1000px) {
-      font-size: 1.4em;
-    }
-    @media screen and (max-width: 700px) {
-      font-size: 0.9em;
+      display: none;
     }
   }
-  .contact_number {
-    font-size: 1em;
-    @media screen and (max-width: 1000px) {
-      font-size: 0.9em;
-    }
-    @media screen and (max-width: 700px) {
-      font-size: 0.7em;
-    }
+  .logo,
+  .contact_details {
+    width: 25%;
   }
   .nav_links_wrapper {
     width: 50%;
@@ -53,6 +40,31 @@
       @media screen and (max-width: 700px) {
         font-size: 1em;
       }
+    }
+  }
+  .contact_details {
+    font-size: 0.9em;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    .contact_number,
+    .contact_email {
+      line-height: 22px;
+      line-height: 22px;
+      padding-left: 60px;
+    }
+    i {
+      width: 14px;
+    }
+    a {
+      color: $primary;
+      &:hover {
+        color: $hover;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      display: none;
     }
   }
 }
