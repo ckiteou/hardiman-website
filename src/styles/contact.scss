@@ -1,0 +1,86 @@
+@import 'colours';
+
+.contact_wrapper {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  .contact_details,
+  .email_form {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    white-space: pre-line;
+    a {
+      color: $primary;
+      &:hover {
+        color: $hover;
+      }
+    }
+    p:first-child {
+      margin-top: 0;
+    }
+    input[type=text]::placeholder,
+    textarea::placeholder {
+      color: $primary;
+    }
+    input[type=text],
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      @media screen and (max-width: 1000px) {
+        width: 80%;
+      }
+      font-size: 1em;
+      border: 1px solid $border;
+      margin: 5px 0;
+      color: $primary;
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 5px grey;
+      }
+
+    }
+    textarea {
+      min-height: 150px;
+      resize: none;
+    }
+    input[type=text] {
+      height: 40px;
+      line-height: 30px;
+    }
+    input[type=submit] {
+      color: white;
+      background-color: $primary;
+      width: 100px;
+      height: 40px;
+      font-size: 1em;
+      border: 1px solid $primary;
+      cursor: pointer;
+      &:hover {
+        box-shadow: 0px 5px 10px grey;
+      }
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    input[type=text],
+    input[type=submit],
+    textarea {
+      border-radius: 5px;
+      box-shadow: none;
+      padding: 10px;
+    }
+  }
+  .contact_details {
+    @media screen and (max-width: 1000px) {
+      height: 250px;
+    }
+  }
+}

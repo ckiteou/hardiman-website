@@ -211,15 +211,70 @@ exports[`App renders 1`] = `
             <hr />
           </div>
           <div
-            className="text"
-            style={
-              Object {
-                "height": "600px",
-                "padding": "20px",
-              }
-            }
+            className="contact_wrapper"
           >
-            Contact
+            <div
+              className="contact_details"
+            >
+              <p>
+                Please reach out to discuss your requirements.
+              </p>
+              <p>
+                Write to me at:
+                Jonathon Hardiman
+                71 Berkeley Crescent
+                East Barnet Village
+                Barnet
+                EN4 8BT
+              </p>
+              <p>
+                T: 07932 771 158
+              </p>
+              <p>
+                E:
+                 
+                <a
+                  href="mailto:jmhgardens@yahoo.co.uk"
+                >
+                  jmhgardens@yahoo.co.uk
+                </a>
+              </p>
+            </div>
+            <div
+              className="email_form"
+            >
+              <form>
+                <input
+                  Placeholder="Full Name"
+                  name="name"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  name="email"
+                  placeholder="Email Address"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  name="telephone"
+                  placeholder="Contact Number"
+                  required={true}
+                  type="text"
+                />
+                <textarea
+                  name="details"
+                  placeholder="Message (please include location)"
+                  required={true}
+                  type="text"
+                />
+                <input
+                  className="submit"
+                  type="submit"
+                  value="Submit"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>
