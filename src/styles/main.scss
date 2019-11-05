@@ -1,10 +1,24 @@
-@import 'colours';
+@import 'variables';
 
 .home {
-  height: 100%;
+  background-image: url('/images/watering.jpg');
+  height: 700px;
+  max-width: auto;
+  background-size: cover;
+}
+
+.main {
+  max-width: 1320px;
+  margin: 0 auto;
 
   .section_container {
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: $small-devices) {
+      padding: 20px;
+    }
     .title-divider {
       display: flex;
       flex-direction: row;

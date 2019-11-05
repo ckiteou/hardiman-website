@@ -13,7 +13,6 @@ const Tile = ({image, title}) => (
 )
 
 const Service = ({toggleShowService, service, setService}) => {
-  console.log(service);
   return (
     <div
     >
@@ -73,7 +72,7 @@ const Services = () => {
   const [showService, toggleShowService] = useState(false);
   const [service, setService] = useState({})
   return (
-    <div className="services">
+    <div className="services_wrapper">
     {
     !showService ?
     <div>

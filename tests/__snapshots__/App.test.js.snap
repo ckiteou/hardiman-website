@@ -10,61 +10,65 @@ exports[`App renders 1`] = `
         className="nav_bar"
       >
         <div
-          className="logo"
-        >
-          JMHGardens
-        </div>
-        <div
-          className="nav_links_wrapper"
-        >
-          <a
-            className="nav_link"
-            href="#home"
-          >
-            Home
-          </a>
-          <a
-            className="nav_link"
-            href="#about"
-          >
-            About
-          </a>
-          <a
-            className="nav_link"
-            href="#services"
-          >
-            Services
-          </a>
-          <a
-            className="nav_link"
-            href="#contact"
-          >
-            Contact
-          </a>
-        </div>
-        <div
-          className="contact_details"
+          className="nav_bar_inner"
         >
           <div
-            className="contact_number"
+            className="logo"
           >
-            <i
-              className="fas fa-phone-volume"
-            />
-              07932 771 158
+            JMHGardens
           </div>
           <div
-            className="contact_email"
+            className="nav_links_wrapper"
           >
-            <i
-              className="fas fa-envelope"
-            />
-              
             <a
-              href="mailto:jmhgardens@yahoo.co.uk"
+              className="nav_link"
+              href="#home"
             >
-              jmhgardens@yahoo.co.uk
+              Home
             </a>
+            <a
+              className="nav_link"
+              href="#about"
+            >
+              About
+            </a>
+            <a
+              className="nav_link"
+              href="#services"
+            >
+              Services
+            </a>
+            <a
+              className="nav_link"
+              href="#contact"
+            >
+              Contact
+            </a>
+          </div>
+          <div
+            className="contact_details"
+          >
+            <div
+              className="contact_number"
+            >
+              <i
+                className="fas fa-phone-volume"
+              />
+                07932 771 158
+            </div>
+            <div
+              className="contact_email"
+            >
+              <i
+                className="fas fa-envelope"
+              />
+                
+              <a
+                href="mailto:jmhgardens@yahoo.co.uk"
+              >
+                jmhgardens@yahoo.co.uk
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -74,215 +78,210 @@ exports[`App renders 1`] = `
     className="wrapper"
   >
     <main>
-      <div
-        className="home"
-      >
-        <img
-          alt="Watering Garden"
-          src="./images/watering.jpg"
-          style={
-            Object {
-              "height": "auto",
-              "width": "100%",
-            }
-          }
+      <div>
+        <div
+          className="home"
         />
         <div
-          className="section_container"
+          className="main"
         >
           <div
-            className="title-divider"
+            className="section_container"
           >
-            <hr />
-            <h2>
-              About
-            </h2>
-            <hr />
-          </div>
-          <div
-            className="text"
-            style={
-              Object {
-                "height": "600px",
-                "padding": "20px",
+            <div
+              className="title-divider"
+            >
+              <hr />
+              <h2>
+                About
+              </h2>
+              <hr />
+            </div>
+            <div
+              className="text"
+              style={
+                Object {
+                  "height": "600px",
+                  "padding": "20px",
+                }
               }
-            }
-          >
-            About
-          </div>
-        </div>
-        <div
-          className="section_container"
-        >
-          <div
-            className="title-divider"
-          >
-            <hr />
-            <h2>
-              Services
-            </h2>
-            <hr />
+            >
+              About
+            </div>
           </div>
           <div
-            className="services"
+            className="section_container"
           >
-            <div>
-              <div
-                className="services_text"
-              >
-                <h3>
-                  A Header
-                </h3>
-                <p>
-                  Lorem Ispum Lorem Ispum Lorem Ispum Lorem.
-                </p>
-                <p>
-                  Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
-                </p>
-                <p>
-                  Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem IspumIspum Lorem Ispum Lorem Ispum Lorem Ispum Lorem IspumIspum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
-                </p>
-                <p>
-                  Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
-                </p>
-              </div>
-              <div
-                className="service_tile_wrapper"
-              >
+            <div
+              className="title-divider"
+            >
+              <hr />
+              <h2>
+                Services
+              </h2>
+              <hr />
+            </div>
+            <div
+              className="services_wrapper"
+            >
+              <div>
                 <div
-                  onClick={[Function]}
+                  className="services_text"
                 >
-                  <div
-                    className="tile"
-                  >
-                    <img
-                      alt="service"
-                      src="https://images.unsplash.com/photo-1499856666482-0667da148d3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1791&q=80"
-                    />
-                    <p>
-                      Garden Design
-                    </p>
-                  </div>
+                  <h3>
+                    A Header
+                  </h3>
+                  <p>
+                    Lorem Ispum Lorem Ispum Lorem Ispum Lorem.
+                  </p>
+                  <p>
+                    Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
+                  </p>
+                  <p>
+                    Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem IspumIspum Lorem Ispum Lorem Ispum Lorem Ispum Lorem IspumIspum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
+                  </p>
+                  <p>
+                    Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum Lorem Ispum.
+                  </p>
                 </div>
                 <div
-                  onClick={[Function]}
+                  className="service_tile_wrapper"
                 >
                   <div
-                    className="tile"
+                    onClick={[Function]}
                   >
-                    <img
-                      alt="service"
-                      src="https://images.unsplash.com/photo-1417036631532-ae3fc6ce32f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                    />
-                    <p>
-                      Garden Maintenance
-                    </p>
+                    <div
+                      className="tile"
+                    >
+                      <img
+                        alt="service"
+                        src="https://images.unsplash.com/photo-1499856666482-0667da148d3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1791&q=80"
+                      />
+                      <p>
+                        Garden Design
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div
-                  onClick={[Function]}
-                >
                   <div
-                    className="tile"
+                    onClick={[Function]}
                   >
-                    <img
-                      alt="service"
-                      src="https://images.unsplash.com/photo-1528092744838-b91de0a10615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-                    />
-                    <p>
-                      Garden Clearance
-                    </p>
+                    <div
+                      className="tile"
+                    >
+                      <img
+                        alt="service"
+                        src="https://images.unsplash.com/photo-1417036631532-ae3fc6ce32f2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                      />
+                      <p>
+                        Garden Maintenance
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="tile"
+                    >
+                      <img
+                        alt="service"
+                        src="https://images.unsplash.com/photo-1528092744838-b91de0a10615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+                      />
+                      <p>
+                        Garden Clearance
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="section_container"
-        >
           <div
-            className="title-divider"
-          >
-            <hr />
-            <h2>
-              Contact
-            </h2>
-            <hr />
-          </div>
-          <div
-            className="contact_wrapper"
+            className="section_container"
           >
             <div
-              className="contact_details"
+              className="title-divider"
             >
-              <p>
-                Please reach out to discuss your requirements.
-              </p>
-              <p>
-                Write to me at:
-                Jonathon Hardiman
-                71 Berkeley Crescent
-                East Barnet Village
-                Barnet
-                EN4 8BT
-              </p>
-              <p>
-                T: 07932 771 158
-              </p>
-              <p>
-                E:
-                 
-                <a
-                  href="mailto:jmhgardens@yahoo.co.uk"
-                >
-                  jmhgardens@yahoo.co.uk
-                </a>
-              </p>
+              <hr />
+              <h2>
+                Contact
+              </h2>
+              <hr />
             </div>
             <div
-              className="email_form"
+              className="contact_wrapper"
             >
-              <form>
-                <input
-                  name="name"
-                  onChange={[Function]}
-                  placeholder="Full Name"
-                  required={true}
-                  type="text"
-                  value=""
-                />
-                <input
-                  name="email"
-                  onChange={[Function]}
-                  placeholder="Email Address"
-                  required={true}
-                  type="text"
-                  value=""
-                />
-                <input
-                  name="telephone"
-                  onChange={[Function]}
-                  placeholder="Contact Number"
-                  required={true}
-                  type="text"
-                  value=""
-                />
-                <textarea
-                  name="message"
-                  onChange={[Function]}
-                  placeholder="Message (please include location)"
-                  required={true}
-                  type="text"
-                  value=""
-                />
-                <input
-                  className="submit"
-                  onClick={[Function]}
-                  type="submit"
-                  value="Submit"
-                />
-              </form>
+              <div
+                className="contact_details"
+              >
+                <p>
+                  Please reach out to discuss your requirements.
+                </p>
+                <p>
+                  Write to me at:
+                  Jonathon Hardiman
+                  71 Berkeley Crescent
+                  East Barnet Village
+                  Barnet
+                  EN4 8BT
+                </p>
+                <p>
+                  T: 07932 771 158
+                </p>
+                <p>
+                  E:
+                   
+                  <a
+                    href="mailto:jmhgardens@yahoo.co.uk"
+                  >
+                    jmhgardens@yahoo.co.uk
+                  </a>
+                </p>
+              </div>
+              <div
+                className="email_form"
+              >
+                <form>
+                  <input
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="Full Name"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Email Address"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    name="telephone"
+                    onChange={[Function]}
+                    placeholder="Contact Number"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <textarea
+                    name="message"
+                    onChange={[Function]}
+                    placeholder="Message (please include location)"
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                  <input
+                    className="submit"
+                    onClick={[Function]}
+                    type="submit"
+                    value="Submit"
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>

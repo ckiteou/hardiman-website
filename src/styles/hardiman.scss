@@ -1,4 +1,4 @@
-@import 'colours';
+@import 'variables';
 
 a {
   text-decoration: none;
@@ -37,10 +37,7 @@ body {
     overflow: hidden;
     min-height: calc(100vh - 100px);
     main {
-      height: 100%;
       margin-top: 70px;
-      min-width: 750px;
-      max-width: 1300px;
     }
   }
   footer {

@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import Services from '../Services'
 import Contact from '../Contact'
-import '../../styles/home.scss'
+import '../../styles/main.scss'
 import '../../styles/hardiman.scss'
 
 class Home extends Component {
   render() {
     return (
-      <img src={'./images/watering.jpg'} style={{width: '100%', height: 'auto'}} alt="Watering Garden"/>
+      <div className="home"></div>
     )
   }
 }
@@ -34,25 +34,27 @@ class Section extends Component {
 }
 
 const Main = () => (
-  <div className="home">
+  <div>
     <ScrollableAnchor id={'home'}>
       <Home/>
     </ScrollableAnchor>
-    <ScrollableAnchor id={'about'}>
-      <Section title="About">
-        <About/>
-      </Section>
-    </ScrollableAnchor>
-    <ScrollableAnchor id={'services'}>
-      <Section title="Services">
-        <Services/>
-      </Section>
-    </ScrollableAnchor>
-    <ScrollableAnchor id={'contact'}>
-      <Section title="Contact">
-        <Contact/>
-      </Section>
-    </ScrollableAnchor>
+    <div className="main">
+      <ScrollableAnchor id={'about'}>
+        <Section title="About">
+          <About/>
+        </Section>
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'services'}>
+        <Section title="Services">
+          <Services/>
+        </Section>
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'contact'}>
+        <Section title="Contact">
+          <Contact/>
+        </Section>
+      </ScrollableAnchor>
+    </div>
   </div>
 )
 
