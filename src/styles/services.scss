@@ -9,6 +9,9 @@
   .services_text {
     text-align: justify;
     margin-bottom: 32px;
+    @media screen and (max-width: $medium-devices) {
+      max-width: 800px;
+    }
   }
   .service_tile_wrapper {
     display: grid;
