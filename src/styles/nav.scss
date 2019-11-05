@@ -15,7 +15,7 @@
     font-family: "Great Vibes";
     padding-top: 2px;
     font-size: 2em;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $medium-devices) {
       display: none;
     }
   }
@@ -25,23 +25,22 @@
   }
   .nav_links_wrapper {
     width: 50%;
+    @media screen and (max-width: $medium-devices) {
+      width: 100%;
+    }
     .nav_link {
       color: $primary;
       font-size: 1.7em;
       padding: 0 15px;
       display: inline-block;
       position: relative;
+      @media screen and (max-width: $small-devices) {
+        font-size: 1em;
+      }
       &:hover {
         @media (hover) {
           color: $hover !important;
         }
-      }
-      @media screen and (max-width: 1000px) {
-        font-size: 1.4em;
-        padding: 0 5px;
-      }
-      @media screen and (max-width: 700px) {
-        font-size: 1em;
       }
     }
   }
@@ -66,7 +65,7 @@
         color: $hover;
       }
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $medium-devices) {
       display: none;
     }
   }
