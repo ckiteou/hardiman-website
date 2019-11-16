@@ -9,7 +9,7 @@
   .services_text {
     text-align: justify;
     margin-bottom: 32px;
-    @media screen and (max-width: $medium-devices) {
+    @media screen and (max-width: $large-devices) {
       max-width: 800px;
     }
   }
@@ -19,43 +19,126 @@
     flex-direction: column;
     grid-gap: 20px;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: 180px;
-    @media screen and (max-width: 1120px) {
-      grid-template-columns: 320px 320px;
-      grid-template-rows: 180px 180px;
+    grid-template-rows: 170px;
+    @media screen and (max-width: $large-devices) {
+      grid-template-columns: 253px 253px 253px;
+      grid-template-rows: 150px;
     }
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: $medium-devices) {
       grid-template-columns: 320px;
       grid-template-rows: 180px 180px 180px;
     }
-    @media screen and (max-width: $small-devices) {
+    @media screen and (max-width: $mobile-devices) {
       grid-template-columns: 100%;
       grid-template-rows: 170px 170px 170px;
     }
     .tile {
-      height: 98%;
-      width: 100%;
+      height: 170px;
+      @media screen and(max-width: $large-devices) {
+        height: 150px;
+      }
+      @media screen and (max-width: $medium-devices) {
+        height: 180px;
+      }
       object-fit: cover;
       position: relative;
       text-align: center;
       color: white;
       opacity: 0.8;
+      transition: opacity 300ms;
+      align-content: center;
       cursor: pointer;
+      &.not_active {
+        opacity: 0.1;
+        transition: opacity 300ms;
+      }
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 10px;
       }
       p {
         position: absolute;
         font-size: 1.9em;
+        @media screen and (min-width: $medium-devices) and (max-width: $large-devices) {
+          font-size: 1.6em;
+        }
+        &.medium {
+          @media screen and (max-width: $medium-devices) {
+            display: none
+          }
+        }
+        &.small {
+          @media screen and (min-width: $medium-devices) {
+            display: none
+          }
+        }
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-shadow: 2px 1px black;
+        text-shadow: 1px 1px black;
+      }
+    }
+    .active {
+      opacity: 0.8px;
+      background-color: $light-background;
+      border-radius: 10px 10px 0 0;
+      height: 200px;
+      @media screen and (max-width: $large-devices) {
+        height: 185px;
+      }
+      @media screen and (max-width: $medium-devices) {
+        height: 180px;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: $mobile-devices) {
+        height: 170px;
+      }
+      p {
+        top: 25%;
+        text-shadow: 0px 0px;
+        color: $primary;
       }
     }
   }
-
+  .description {
+    width: 100%;
+    border-radius: 10px;
+    background-color: $light-background;
+    transition: height 300ms;
+    overflow: hidden;
+    margin-top: 20px;
+    .description {
+      padding: 32px;
+      box-sizing: border-box;
+      margin: 0;
+      p {
+        white-space: pre-line;
+        text-align: justify;
+        margin: 0;
+        line-height: 1.7rem;
+      }
+    }
+    &.clearance {
+      height: 250px; /* adjust according to copy */
+    }
+    &.maintenance {
+      height: 200px; /* adjust according to copy */
+    }
+    &.design {
+      height: 300px; /* adjust according to copy */
+    }
+    &.none {
+      height: 0.1px;
+      transition: height 300ms;
+      margin-top: 20px;
+    }
+    @media screen and (max-width: $large-devices) {
+      max-width: 800px;
+    }
+    @media screen and (max-width: $medium-devices) {
+      display: none;
+    }
+  }
 }
