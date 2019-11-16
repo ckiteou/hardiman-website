@@ -233,7 +233,7 @@ exports[`App renders 1`] = `
                             >
                               boo
                             </p>
-                             /* update with copy */
+                             
                           </div>
                         </div>
                       </div>
@@ -325,7 +325,7 @@ exports[`App renders 1`] = `
                             >
                               boo
                             </p>
-                             /* update with copy */
+                             
                           </div>
                         </div>
                       </div>
@@ -417,7 +417,7 @@ exports[`App renders 1`] = `
                             >
                               boo
                             </p>
-                             /* update with copy */
+                             
                           </div>
                         </div>
                       </div>

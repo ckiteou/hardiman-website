@@ -35,7 +35,7 @@ const ServiceCardFront = ({image, title, active}) => (
 const ServiceCardBack = ({title}) => (
   <div className="tile active">
     <p className="medium">{title}</p>
-    <p className="small">boo</p> /* update with copy */
+    <p className="small">boo</p> {/* update with copy */}
   </div>
 )
 
