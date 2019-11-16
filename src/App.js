@@ -16,7 +16,7 @@ const App = () => (
     </header>
     <div className="wrapper">
       <main>
-        <Main />
+        <Main/>
       </main>
     </div>
     <footer>

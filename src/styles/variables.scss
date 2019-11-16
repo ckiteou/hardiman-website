@@ -1,10 +1,14 @@
 // colours (English spelling - how it shoud be)
+$grey-1: #F8F8F8;
+
 $primary: #065e10;
 $hover: #6ca56d;
 $divider: #e9e9e9;
 $border: #D4D4D4;
+$light-background: $grey-1;
 
-
-// size
-$small-devices: 499px;
-$medium-devices: 1080px;
+// break-points
+$mobile-devices: 499px;
+$small-devices: 500px;
+$medium-devices: 880px;
+$large-devices: 1080px;

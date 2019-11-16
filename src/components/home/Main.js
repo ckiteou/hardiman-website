@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
-import Services from '../Services'
+import Services from '../services/Services'
 import Contact from '../Contact'
 import '../../styles/main.scss'
 import '../../styles/hardiman.scss'

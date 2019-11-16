@@ -14,15 +14,15 @@
   .email_form {
     vertical-align: top;
     display: inline-block;
-    @media screen and (max-width: $medium-devices) {
+    @media screen and (max-width: $large-devices) {
       width: 400px;
     }
-    @media screen and (max-width: 880px) {
+    @media screen and (max-width: $medium-devices) {
       display: block;
       width: 400px;
       text-align: center;
     }
-    @media screen and (max-width: $small-devices) {
+    @media screen and (max-width: $mobile-devices) {
       width: 100%;
     }
     white-space: pre-line;
