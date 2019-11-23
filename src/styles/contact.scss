@@ -4,6 +4,12 @@
   height: auto;
   margin: 0 auto;
   padding-top: 20px;
+  max-width: auto;
+  @media screen and (min-width: $medium-devices) {
+    background-image: url("https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .contact_details {
     width: 520px;
   }
