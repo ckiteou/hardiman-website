@@ -26,21 +26,21 @@ const services = [
 ]
 
 const ServiceCardFront = ({image, title, active}) => (
-  <div className={!active ? "tile" : "tile not_active" }>
+  <div className={!active ? "tile font" : "tile font not_active" }>
     <img src={image} alt="service"/>
     <p>{title}</p>
   </div>
 )
 
-const ServiceCardBack = ({title}) => (
-  <div className="tile active">
+const ServiceCardBack = ({title, className}) => (
+  <div className={`tile active ${className}`}>
     <p className="medium">{title}</p>
     <p className="small">boo</p> {/* update with copy */}
   </div>
 )
 
 const Description = ({details}) => (
-  <div className="description">
+  <div>
     <p>{details}</p>
   </div>
 )
@@ -89,7 +89,7 @@ class ServiceTiles extends Component {
                   />
                 </div>
                 <div key="back" onClick={() => this.handleClick(service.key)}>
-                  <ServiceCardBack title={service.title}/>
+                  <ServiceCardBack title={service.title} className={service.key}/>
                 </div>
               </ReactCardFlip>
             ))
