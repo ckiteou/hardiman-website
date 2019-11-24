@@ -1,55 +1,111 @@
 @import 'variables';
 
-.quote_image_container {
-  margin-top: 70px;
-  width: 100%;
-  height: 100%;
-  font-size: 1.2em;
-  font-family: "Georgia", Times, serif;
-  font-style: italic;
-  margin-left: auto;
-  margin-right: auto;
+.about_wrapper {
+  height: auto;
+  padding-top: 20px;
+  max-width: auto;
+  .section {
+    margin: 0 auto 60px auto;
+    max-width: 1000px;
+    &:nth-child(2) {
+      margin: 0 auto;
+    }
+    @media screen and (max-width: $large-devices) {
+      width: 800px;
+      margin: 0 auto 40px auto;
+      &:nth-child(2) {
+        margin: 0 auto;
+      }
+    }
+    @media screen and (max-width: $medium-devices) {
+      width: 100%;
+    }
+  }
+  .profile_image,
+  .quote_container,
+  .another_quote,
+  .another_image {
+    vertical-align: top;
+    display: inline-block;
+  }
+  .profile_image {
+    background-image: url("/images/jonathan.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 15px 5px 30px 0 white inset, -15px -5px 30px 0 white inset;
+    border-radius: 170px;
+    height: 300px;
+    width: 300px;
+    @media screen and (max-width: $large-devices) {
+      height: 200px;
+      width: 200px;
+    }
+    @media screen and (max-width: $medium-devices) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
 
   .quote_container {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    width: 60%;
-    float: left;
-    text-align: center;
-  }
-
-  .quote {
-    position: relative;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    padding: 0 20px 0 60px;
-    display:flex;
-    align-items: center;
-    cursor: default;
+    height: 300px;
+    width: 700px;
+    @media screen and (max-width: $large-devices) {
+      width: 600px;
+      height: 300px;
+    }
+    background-image: url("https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+    @media screen and (max-width: $medium-devices) {
+      background-image: none;
+      display: block;
+      width: 300px;
+      height: 150px;
+      margin: 20px auto;
+    }
+    background-position: center;
+    background-size: cover;
+    .quote {
+      width: 350px;
+      text-align: center;
+      padding: 20px 0 0 40px;
+      font-family: "Great Vibes";
+      font-size: 1.4rem;
+      @media screen and (max-width: $large-devices) {
+        width: 300px;
+      }
+      @media screen and (max-width: $medium-devices) {
+        width: 300px;
+        padding: 0;
+      }
+    }
   }
-
-  .image_container {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-    width: 40%;
-    float: right;
-    line-height: 300px;
-  }
-
-  .profile_image {
-    position: relative;
-    display: inline-block;
+  .another_quote {
     box-sizing: border-box;
-    width: 60%;
-    left: 10%;
-    height: auto;
-    vertical-align: middle;
-    border: solid 2px $primary;
-    opacity: 0.9;
-    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 7px 10px 10px rgba(0,0,0,0.22);
+    width: 600px;
+    padding-right: 40px;
+    white-space: pre-line;
+    @media screen and (max-width: $large-devices) {
+      width: 500px;
+    }
+    @media screen and (max-width: $medium-devices) {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .another_image {
+    background-image: url("https://images.unsplash.com/photo-1457530378978-8bac673b8062?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    @media screen and (max-width: $large-devices) {
+      width: 300px;
+      height: 450px;
+    }
+    @media screen and (max-width: $medium-devices) {
+      display: none;
+    }
   }
 }

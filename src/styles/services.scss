@@ -7,8 +7,10 @@
     width: 100%;
   }
   .services_text {
-    text-align: justify;
     margin-bottom: 32px;
+    .body {
+      white-space: pre-line;
+    }
     @media screen and (max-width: $large-devices) {
       max-width: 800px;
     }

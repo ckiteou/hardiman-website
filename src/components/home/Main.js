@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import Services from '../services/Services'
 import Contact from '../Contact'
+import About from '../About'
 import '../../styles/main.scss'
 import '../../styles/hardiman.scss'
 
@@ -12,11 +13,6 @@ class Home extends Component {
     )
   }
 }
-
-// exract to seperate files
-const About = () => (
-  <div className="text" style={{height: '600px', padding: '20px'}}>About</div>
-)
 
 configureAnchors({offset: -70, scrollDuration: 800})
 
