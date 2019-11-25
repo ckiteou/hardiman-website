@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer'
 
-import { ImageSlide } from '../src/components/home/Carousel';
+import { ImageSlide } from '../src/components/Carousel';
 import { imgUrls }  from  '../src/images/home/index.js'
 
 describe('ImageSlide', () => {

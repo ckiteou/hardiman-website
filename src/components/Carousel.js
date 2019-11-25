@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { imgUrls }  from  '../../images/home/index.js'
+import { imgUrls }  from  '../images/home/index.js'
 import '../../styles/carousel.scss';
 
 

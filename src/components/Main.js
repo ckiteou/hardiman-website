@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
-import Services from '../services/Services'
-import Contact from '../Contact'
-import About from '../About'
-import '../../styles/main.scss'
-import '../../styles/hardiman.scss'
-
-class Home extends Component {
-  render() {
-    return (
-      <div className="home"></div>
-    )
-  }
-}
+import Services from './services/Services'
+import Contact from './Contact'
+import About from './About'
+import Home from './Home'
+import '../styles/main.scss'
+import '../styles/hardiman.scss'
 
 configureAnchors({offset: -70, scrollDuration: 800})
 
